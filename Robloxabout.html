@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Web: About</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+.menu{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:50px;
+    z-index:1000;
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    
+}
+nav a:hover{
+   border-bottom: 2px solid white;
+}
+.logo{
+    color:white;
+    text-transform: uppercase;
+}
+.image{
+    height:70vh;
+    width:50%;
+
+}
+.content{
+    height:70vh;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+   
+}
+.container{
+    display: flex;
+    margin:7rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:white;
+
+}
+body{
+    background-image: url(https://wallpaperaccess.com/full/196841.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.image{
+    background-image: url(https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/rbgebzd54uexaaqdnzrs);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media all and (max-width:990px){
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        padding:20px;
+    }
+    .container{
+        flex-direction:column;
+        margin:0;
+    }
+    .image{
+        width:100%;
+    }
+    .content{
+        width:100%;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <h2 class="logo">Roblox</h2>
+        <a href="Robloxhome.html">Home</a>
+        <a href="Robloxabout.html">About</a>
+        <a href="Robloxgallery.html">Gallery</a>
+        <a href="Robloxcontact.html">Contact</a>
+    </nav>
+    <section class="about">
+        <div class="container">
+            <div class="image"></div>
+            <div class="content">
+                <h1>Roblox</h1>
+                <p>Roblox is an online platform and storefront where users go to play games. Roblox is not a game, it is a place where people play games made by other developers. In this sense, it is more similar to PC platform Steam than it is to any online children’s game.
+
+                    What makes Roblox different from anything else in the games industry — including a storefront like Steam — is that all the games are made by its users. On Roblox, the fun doesn’t just come from playing games, it also comes from making games. These games are not formally developed by Roblox Corporation, but by users of the platform. Currently, the official website boasts that its users have published over 20 million games on the platform.</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

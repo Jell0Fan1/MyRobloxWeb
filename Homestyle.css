@@ -1,0 +1,91 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+ *{
+     margin:0;
+     font-family: 'Roboto', sans-serif;
+     box-sizing: border-box;
+ 
+ }
+ .menu{
+     background-color: rgba(0, 0, 0, 0.3);
+     position: fixed;
+     top:0;
+     left:0;
+     width:100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding:50px;
+     z-index:1000;
+ }
+ .menu a{
+     color:white;
+     text-decoration: none;
+     
+ }
+nav a:hover{
+   border-bottom: 2px solid white;
+}
+.logo{
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+  
+}
+.showcase{
+    position: absolute;
+    right: 0;
+    min-height: 100vh;
+    background-color: cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+.showcase video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    object-fit: cover;
+}
+.text{
+   z-index: 10;
+   position: relative;
+   color: white;
+}
+.text h1{
+   font-size: 5em;
+   text-transform: uppercase;
+   font-weight: 800;
+}
+.text h2{
+   font-size: 4em;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.text p{
+   font-size: 1.1em;
+   margin: 20px 0;
+   font-weight: 400;
+}
+.text a{
+   background-color: white;
+   text-decoration: none;
+   padding: 10px 30px;
+   text-transform: uppercase;
+   transition: all 1s;
+}
+.text a:hover{
+   letter-spacing: 6px;
+}
+@media all and (max-width: 990px){
+   nav{
+      flex-direction: column; 
+   }
+   nav a{
+      padding: 20px;
+   }
+}

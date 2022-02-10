@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Web: Gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+        * {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .menu {
+            background-color: rgba(0, 0, 0, 0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+
+        }
+
+        .col {
+            width: 33.3%;
+            height: 400px;
+            margin: 5px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10%;
+            transition: all 2s;
+        }
+
+        img:hover {
+            filter: blur(5px);
+            transform: rotate(360deg);
+        }
+
+        h1 {
+            text-align: center;
+            padding: 100px;
+            background-color: aqua;
+            color: white;
+        }
+
+        @media all and (max-width:990px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 20px;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .col{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <h2 class="logo">Roblox</h2>
+        <a href="Robloxhome.html">Home</a>
+        <a href="Robloxabout.html">About</a>
+        <a href="Robloxgallery.html">Gallery</a>
+        <a href="Robloxcontact.html">Contact</a>
+    </nav>
+    <h1>Roblox Gallery</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/3/2021/03/Best-scary-Roblox-games-horror-piggy-679cf91.jpg?quality=90&resize=620,413"
+                    alt="">
+            </div>
+            <div class="col">
+                <img src="https://assets.vg247.com/current//2021/04/Roblox-Best-Games-Murder-Mystery-2-jepg-600x338.jpg"
+                    alt="">
+            </div>
+            <div class="col">
+                <img src="https://i.ytimg.com/vi/oTIigjcslfY/maxresdefault.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="https://www.pockettactics.com/wp-content/uploads/2020/05/Adopt-me-roblox.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="https://qph.fs.quoracdn.net/main-qimg-794ce19d9cb03468a750e7b839c3eb35-lq" alt="">
+            </div>
+            <div class="col">
+                <img src="https://t5.rbxcdn.com/b78ed5cd5497ee01a30323d6a8002694" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

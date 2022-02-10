@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Web: Contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+        * {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        .menu {
+            background-color: rgba(0, 0, 0, 0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .logo {
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+
+        @media all and (max-width:600px) {
+            .container {
+                margin: 0rem;
+            }
+
+        }
+
+        .container {
+            height: 100vh;
+            background-image: url(https://wallpaperboat.com/wp-content/uploads/2021/03/16/71433/roblox-08.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 60vh;
+            width: 60vh;
+            background-color: rgb(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            border-radius: 25%;
+        }
+
+        input {
+            height: 3rem;
+            width: 15rem;
+            border-radius: 25%;
+        }
+
+        button {
+            height: 2rem;
+            width: 20rem;
+            background-color: turquoise;
+            border-radius: 25%;
+        }
+
+        button:hover {
+            background-color: green;
+            transition: all 2s;
+        }
+
+        @media all and (max-width:990px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<nav class="menu">
+    <h2 class="logo">Roblox</h2>
+    <a href="Robloxhome.html">Home</a>
+    <a href="Robloxabout.html">About</a>
+    <a href="Robloxgallery.html">Gallery</a>
+    <a href="Robloxcontact.html">Contact</a>
+</nav>
+<div class="container">
+    <div class="box">
+        <h1>Contact Us</h1>
+        <br>
+        <input type="text" placeholder="Enter Email">
+        <br>
+        <input type="password" placeholder="Enter Password">
+        <br>
+        <button>Contact</button>
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
